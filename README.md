@@ -27,3 +27,28 @@ Remove labels background color
 ggVennDiagram(x, label_alpha = 0)
 
 ```
+
+Change category names and the gradient fill color
+
+```
+ggVennDiagram(
+  x, label_alpha = 0,
+  category.names = c("Stage 1","Stage 2","Stage 3", "Stage4")
+  ) +
+  ggplot2::scale_fill_gradient(low="blue",high = "yellow")
+```
+
+
+```
+ggVennDiagram(x[1:3], label_alpha = 0)
+
+```
+
+
+# Default plot from ggvenn package 
+```
+ggvenn(x)
+
+```
+
+
